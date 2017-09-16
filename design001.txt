@@ -1,0 +1,59 @@
+Global Hash
+  g-py-data (list a,..z, aa,ab,...zz)
+  g-py-hash[a,...,zz]
+
+PYHashItem
+  ('a, (list_a, list_aa, ... list_az))
+
+PYDataItem
+  list_a = ('a, flag (list ...))
+  list_b = ('b, flag (list ...))
+  list_aa = ('aa, flag (list ....))
+  ...
+  list_zz = ('zz, flag (list ....))
+  flag -- user = 1, system = 0
+
+;;; function list
+  create-sdata (chars flag &optional alst)
+  get-sdata-data (sdata)
+  get-sdata-flag (sdata)
+  get-sdata-py (sdata)
+  set-sdata-data (sdata alst)
+  set-sdata-flag (sdata flag)
+  set-sdata-py (sdata py)
+  add-sdata-data (sdata alst)
+  remove-sdata-data (sdata alst)
+  (sdata-test0)
+
+  calc-sindex (chars)
+  get-py-sdata (py-array chars)
+  set-py-sdata (py-array chars sdata)
+  add-py-sdata (py-array chars alst)
+  remove-py-sdata (py-array chars alst)
+  create-pydata ()
+  (py-sdata-test001)
+
+  create-pyhash () 
+  add-pyhash-data (pyhash chars sdata)
+  get-pyhash-data (pyyash chars)
+
+  build-pydata (fname)
+  build-pydata-sdata-ch2 (ta n ch1 ch2)
+  build-pydata-sdata-ch1 (ta n ch1)
+  build-pydata-sdata (ta n chars)
+
+  build-pydata-array2 (fname)
+  build-pydata-array1 (fname)
+  build-pydata-array0 (fname)
+  build-pydata-array ()
+  build-pydata-hash ()
+  build-pydata ()
+  build-pydata-test0 ()
+
+  py-proc-ekeys (alst chars)
+  py-rdata-sort (alst)
+  py-keypress (chars)
+
+  zrm4m-read-table (file)
+  zrm4m-process-table (file)
+
